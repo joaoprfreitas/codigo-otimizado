@@ -1,0 +1,13 @@
+digraph {
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	1 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="main\n100.00%\n(0.00%)"];
+	1 -> 3 [arrowsize="0.91", color="#e69b04", fontcolor="#e69b04", fontsize="10.00", label="83.33%\n1×", labeldistance="3.33", penwidth="3.33"];
+	1 -> 4 [arrowsize="0.41", color="#0c5f88", fontcolor="#0c5f88", fontsize="10.00", label="16.67%\n1×", labeldistance="0.67", penwidth="0.67"];
+	2 [color="#e69b04", fontcolor="#ffffff", fontsize="10.00", label="merge\n83.33%\n(83.33%)\n524287×"];
+	3 [color="#e69b04", fontcolor="#ffffff", fontsize="10.00", label="mergeSort\n83.33%\n(0.00%)\n1048575×"];
+	3 -> 2 [arrowsize="0.91", color="#e69b04", fontcolor="#e69b04", fontsize="10.00", label="83.33%\n524287×", labeldistance="3.33", penwidth="3.33"];
+	3 -> 3 [arrowsize="0.91", color="#e69b04", fontcolor="#e69b04", fontsize="10.00", label="1048574×", labeldistance="3.33", penwidth="3.33"];
+	4 [color="#0c5f88", fontcolor="#ffffff", fontsize="10.00", label="clean_cache\n16.67%\n(16.67%)\n1×"];
+}
