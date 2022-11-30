@@ -62,7 +62,6 @@ void convolve_avx(float* in, float* kernel, float* out) {
 	}
 
 	for (; i < N + M - 1; i++) {
-		out[i] = 0.0;
 		int startk = i >= N ? i - N + 1 : 0;
 		int endk = i < M ? i : M - 1;
 		for (int k = startk; k <= endk; k++) {
