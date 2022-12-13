@@ -1,6 +1,3 @@
-all:
-	gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge main.c -o main -lm
-
 test:
 	gcc -o main main.c -pg -lm -march=native
 	gcc -o mainO1 main.c -pg -lm -O1 -march=native
